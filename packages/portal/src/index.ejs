@@ -6,7 +6,40 @@
     <title></title>
   </head>
   <body>
+    <script type="systemjs-importmap">
+      {
+        "imports": {
+          "@portal/main": "http://localhost:9001/singleSpaEntry.js"
+        }
+      }
+    </script>
+    <script src="https://unpkg.com/systemjs@4.1.0/dist/system.js"></script>
+    <script src="https://unpkg.com/systemjs@4.1.0/dist/extras/amd.js"></script>
+    <script src="https://unpkg.com/systemjs@4.1.0/dist/extras/named-exports.js"></script>
+    <script src="https://unpkg.com/systemjs@4.1.0/dist/extras/use-default.js"></script>
+    <!-- <script src=""></script>
+    <script src=".js"></script> -->
+    <!-- <script type="systemjs-importmap">
+      {
+        "imports": {
+          "@portal/main": "http://localhost:9001/singleSpaEntry.js"
+        }
+      }
+    </script> -->
+    <script>
+      window.SystemJS = window.System;
+    </script>
+    <script type="systemjs-importmap">
+      {
+        "imports": {
+          "React": "https://unpkg.com/react@16/umd/react.development.js",
+          "react": "https://unpkg.com/react@16/umd/react.development.js",
+          "ReactDOM": "https://unpkg.com/react-dom@16/umd/react-dom.development.js",
+          "components": "http://localhost:8001/components.js"
+        }
+      }
+    </script>
+
     <div id="root"></div>
-    <script src="http://e-static.oss-cn-shanghai.aliyuncs.com/js/systemjs/system.0.20.19.js"></script>
   </body>
 </html>

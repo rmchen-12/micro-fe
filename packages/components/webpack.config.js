@@ -10,20 +10,18 @@ module.exports = {
   mode: 'development',
   devtool: 'eval-source-map',
   entry: {
-    singleSpaEntry: './src/singleSpaEntry.js',
-    store: './src/store'
+    components: './components.js'
   },
   externals: {
     react: 'React',
-    'react-dom': 'ReactDOM',
-    components: 'components'
+    'react-dom': 'ReactDOM'
   },
   output: {
     filename: '[name].js',
-    publicPath: 'http://localhost:9001/',
+    publicPath: 'http://localhost:8001/',
     path: path.resolve(__dirname, 'release'),
     libraryTarget: 'umd',
-    library: 'main'
+    library: 'components'
   },
 
   resolve: {
