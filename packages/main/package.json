@@ -13,6 +13,6 @@
     "custom-event": "^1.0.1"
   },
   "devDependencies": {
-    "webpack-cli": "3.3.10"
+    "webpack-cli": "5.0.1"
   }
 }
